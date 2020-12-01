@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.row::after
+{
+  content: "";  
+  clear: both;
+  display: table;
+}
+
+body
+{
+    
+    position: relative;
+    height: calc(70vh - 80px);
+    background-color: #AAEDCE;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+
+}
+header
+{
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.logo
+{
+    color: #069370;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none;
+}
+nav
+{
+    float: right;
+}
+.clearfix{
+    clear: both;
+}
+nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li
+{
+    list-style: none;
+}
+nav ul li a
+{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+}
+nav ul li a.active,
+nav ul li a:hover
+{
+    background: #069370;
+    color: #fff;
+    transition: 0.5s;
+}
+
+@media (max-width: 768px)
+    {
+    body, header, section, article, div
+    {
+        margin: 20px;
+    }
+    }
+@media (max-width: 900px)
+{
+    .menu-toggle
+    {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+        float: right;
+        cursor: point;
+        text-align: center;
+        font-size: 30px;
+        color: #069370;
+    }
+    .menu-toggle:before
+    {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    .menu-toggle.active:before
+    {
+        content: '\f00d';
+    }
+    nav
+    {
+        display: none;
+    }
+    
+    nav.active
+    {
+        display: block;
+        width: 100%;
+    }
+    nav.active ul
+    {
+        display: block;
+    }
+    nav.active ul li a
+        {
+        margin: 0;
+        }
+        
+        @media only screen and (min-width: 768px)
+    {
+        body, header, section, article, class, div
+        {
+        margin: 20px;
+        }
+    }
+}
+
+    
+.containerPaginaTitulo
+            {
+                max-width: 1200px;
+                height: 80px;
+                background-color: #AA0A0A;
+                text-align: center;
+                line-height: 80px;
+                margin: 0 auto;
+            }          
+            .paginaTitulo
+            {
+                font-family: JurassicFont;
+                font-size: 60px;
+                color: #ffffff;
+                letter-spacing: 4px;
+            }
+            
+.containerSubTitulo
+            {
+                max-width: 1200px;
+                height: 80px;
+                background-color: #AA0A0A;
+                text-align: center;
+                line-height: 80px;
+                margin: 0 auto; 
+            }          
+            .paginaSubTitulo
+            {
+                font-family: JurassicFont;
+                font-size: 60px;
+                color: #ffffff;
+                letter-spacing: 4px;
+            }
+            .containerFilmeA
+            {
+                max-width: 1200px;;
+                height:     300px;
+                background-color: #ffffff;
+
+                margin: 0 auto; 
+            }
+            
+            .containerFilmeB
+            {
+                max-width: 1200px;;
+                height: 300px;
+                background-color: #555555;
+                margin: 0 auto; 
+            }
+            
+            .filmePosterA
+            {
+                border: 1px solid red;
+                width: 320px;
+                height: 270px;
+                float: left;
+                position: relative;
+                top: 10px;
+                left: 50px;
+            }
+            
+            .filmePosterB
+            {
+                border: 1px solid #ffff00;
+                float: right;
+                width: 320px;
+                height: 270px;
+                position: relative;
+                top: 15px;
+                right: 50px;
+            }
+            
+            .filmeTituloA
+            {
+                position: relative;
+                top: 20px;
+                left: 90px; /* Medidas originais do fluxo do site (imagem do poster) sem deslocamento feito em .filmePosterA*/
+                margin: 0;
+            }
+            
+            .filmeTituloB
+            {
+                position: relative;
+                color: #ffffff;
+                top: 20px;
+                left: 40px; /* Medidas originais do fluxo do site (imagem do poster) sem deslocamento feito em .filmePosterA*/
+                margin: 0;
+            }
+            
+            .filmeDescricaoA
+            {
+                width: 1000px; 
+                position: relative;
+                top: 20px;
+                left: 90px;
+                text-align: justify;
+            }
+            
+            .filmeDescricaoB
+            {
+                width: 600px; 
+                color: #ffffff;
+                position: relative;
+                top: 20px;
+                left: 40px;
+                text-align: justify;
+            }
+            
+            p
+            {
+                margin-top: 15px;
+            }
+            
+.containerCadastroFornecedores
+            {
+                max-width: 1200px;;
+                height: 80px;
+                background-color: #AA0A0A;
+                text-align: center;
+                line-height: 80px;
+                margin: 0 auto; 
+            }          
+            .paginaCadastroFornecedores
+            {
+                font-family: JurassicFont;
+                font-size: 60px;
+                color: #ffffff;
+                letter-spacing: 4px;
+            }
+.containerRodape
+            {
+                max-width: 1200px;;
+                height: 80px;
+                
+                text-align: center;
+                line-height: 80px;
+                margin: 0 auto; 
+            }          
+            .rodapeTexto
+            {
+                font-size: 25px;
+                color: #0E0F0E;
+             
+                letter-spacing: 4px;   
+            }
+
+.containerRedesSociais
+            {
+                max-width: 1200px;;
+                height: 80px;
+                text-align: center;
+                line-height: 80px;
+                margin: 0 auto;
+                align-content: center;
+
+            }
+        .fa {
+                padding: 20px;
+                font-size: 30px;
+                width: 50px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+                border-radius: 50%;
+                align-content: center;
+
+              }
+
+        .fa:hover {
+          opacity: 0.7;
+          align-content: center;
+        }
+
+
+        .fa-facebook {
+          background: #1F3766;
+          color: #2517ED;
+          align-content: center;
+          
+        }
+        
+        .fa-youtube {
+          background: #bb0000;
+          color: white;
+          align-content: center;
+        }
+        
+        .fa-instagram {
+          background: #125688;
+          color: white;
+          align-content: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            align-content: center;
+            
+          }
+          
+          ul {
+            /*float: none;*/
+            align-content: center;
+            display: flex;
+          }
+          
+          li a {
+            /*display: flex;
+            /*color: white;*/
+            text-align: center;
+            /*padding: 16px;*/
+            text-decoration: none;
+
+          }
+          
+         /* li a:hover {
+            background-color: NONE;
+          }*/
